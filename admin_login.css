@@ -5,9 +5,8 @@ form {
 }
 
 label {
-    width: 40%;
-    position: absolute;
-    left: 10%;
-    text-align: center;
-    margin-right: 10px;
-}
+    display: inline-block;
+    width: 65px;
+    text-align: right;
+}​
+
