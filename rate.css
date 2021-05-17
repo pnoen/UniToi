@@ -1,0 +1,13 @@
+h1, h3, p, .rate {
+    text-align: center;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+button {
+    display: block;
+    margin: auto;
+    margin-top: 80px;
+}

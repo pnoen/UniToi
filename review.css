@@ -1,0 +1,11 @@
+h1, p {
+    text-align: center;
+}
+
+input {
+    display: block;
+    margin: auto;
+    /* height: 200px; */
+    width: 800px;
+    resize: none;
+}

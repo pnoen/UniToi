@@ -1,9 +1,10 @@
-h1, #admin_login_paragraph {
+h1 {
     text-align: center;
 }
 
-#uni_map, #admin_login_link {
+#uni_map, .links {
     display: block;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 40px;
 }
