@@ -1,11 +1,15 @@
-h1, p {
+h1, h3, p, #toilet_dropdown {
     text-align: center;
+}
+
+h3 {
+    margin-top: 50px;
 }
 
 input {
     display: block;
     margin: auto;
-    /* height: 200px; */
+    margin-top: 40px;
     width: 800px;
     resize: none;
 }
