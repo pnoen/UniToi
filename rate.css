@@ -2,12 +2,34 @@ h1, h3, p, .rate, #toilet_dropdown {
     text-align: center;
 }
 
-h3 {
+h1, h3 {
     margin-top: 50px;
 }
 
 button {
     display: block;
     margin: auto;
-    margin-top: 80px;
+    margin-top: 50px;
+}
+
+#navigation_bar {
+    background-color: darkgreen;
+    overflow: hidden;
+    margin: auto;
+    width: 72.2%;
+    margin-top: 40px;
+}
+  
+#navigation_bar a {
+    float: left;
+    color: gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+  
+#navigation_bar a:hover {
+    background-color: gainsboro;
+    color: black;
 }

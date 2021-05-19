@@ -5,93 +5,104 @@
     <head>
         <title>UniToi</title>
         <link rel="stylesheet" href="rate.css">
-        <script src="rate.js"></script>
     </head>
 
     <body>
 
-        <h1>Rate a Toilet</h1>
+      <div id="navigation_bar">
+        <a href="home.html">Home</a>
+        <a href="admin_login.html">Admin Login</a>
+        <a href="rate.html">Rate a Toilet</a>
+        <a href="review.html">Review a Toilet</a>
+        <a href="">About Us</a>
+        <a href="">Contact Us</a>
+        <a href="">Help Desk/FAQ</a>
+        <a href="">Privacy Policy</a>
+        <a href="">Site Map</a>
+      </div>
 
-        <p>On this page you have the option to enter a rating from 0-5 on a university
-            bathroom, where 0 indicates 'very poor' and 5 indicates 'excellent'.
-        </p>
+      <h1>Rate a Toilet</h1>
 
-        <h3>Select which toilet you wish to rate</h3>
-        <form id="toilet_dropdown">
-          <select>
-            <option>Toilet 1</option>
-            <option>Toilet 2</option>
-            <option>Toilet 3</option>
-            <option>Toilet 4</option>
-            <option>Toilet 5</option>
-            <option>Toilet 6</option>
-          </select>
-        </form>
-        
-        <h3>Enter a rating on the toilet's cleanliness:</h3>
+      <p>On this page you have the option to enter a rating from 0-5 on a university
+          bathroom, where 0 indicates 'very poor' and 5 indicates 'excellent'.
+      </p>
+
+      <h3>Select which toilet you wish to rate</h3>
+      <form id="toilet_dropdown">
+        <select>
+          <option>Toilet 1</option>
+          <option>Toilet 2</option>
+          <option>Toilet 3</option>
+          <option>Toilet 4</option>
+          <option>Toilet 5</option>
+          <option>Toilet 6</option>
+        </select>
+      </form>
+      
+      <h3>Enter a rating on the toilet's cleanliness:</h3>
+      <div class="rate">
+          <input type="radio" id="clean5" name="ratecleanliness" value="5"/>
+          <label for="clean5" title="text">5</label>
+
+          <input type="radio" id="clean4" name="ratecleanliness" value="4"/>
+          <label for="clean4" title="text">4</label>
+
+          <input type="radio" id="clean3" name="ratecleanliness" value="3"/>
+          <label for="clean3" title="text">3</label>
+
+          <input type="radio" id="clean2" name="ratecleanliness" value="2"/>
+          <label for="clean2" title="text">2</label>
+
+          <input type="radio" id="clean1" name="ratecleanliness" value="1"/>
+          <label for="clean1" title="text">1</label>
+
+          <input type="radio" id="clean0" name="ratecleanliness" value="0"/>
+          <label for="clean1" title="text">0</label>
+        </div>
+
+        <h3>Enter a rating on the toilet's availability of facilities:</h3>
         <div class="rate">
-            <input type="radio" id="clean5" name="ratecleanliness" value="5"/>
-            <label for="clean5" title="text">5</label>
+          <input type="radio" id="availability5" name="rateavailability" value="5"/>
+          <label for="availability5" title="text">5</label>
 
-            <input type="radio" id="clean4" name="ratecleanliness" value="4"/>
-            <label for="clean4" title="text">4</label>
+          <input type="radio" id="availability4" name="rateavailability" value="4"/>
+          <label for="availability4" title="text">4</label>
 
-            <input type="radio" id="clean3" name="ratecleanliness" value="3"/>
-            <label for="clean3" title="text">3</label>
+          <input type="radio" id="availability3" name="rateavailability" value="3"/>
+          <label for="availability3" title="text">3</label>
 
-            <input type="radio" id="clean2" name="ratecleanliness" value="2"/>
-            <label for="clean2" title="text">2</label>
+          <input type="radio" id="availability2" name="rateavailability" value="2"/>
+          <label for="availability2" title="text">2</label>
 
-            <input type="radio" id="clean1" name="ratecleanliness" value="1"/>
-            <label for="clean1" title="text">1</label>
+          <input type="radio" id="availability1" name="rateavailability" value="1"/>
+          <label for="availability1" title="text">1</label>
 
-            <input type="radio" id="clean0" name="ratecleanliness" value="0"/>
-            <label for="clean1" title="text">0</label>
-          </div>
+          <input type="radio" id="availability0" name="rateavailability" value="0"/>
+          <label for="availability1" title="text">0</label>
+        </div>
 
-          <h3>Enter a rating on the toilet's availability of facilities:</h3>
-        <div class="rate">
-            <input type="radio" id="availability5" name="rateavailability" value="5"/>
-            <label for="availability5" title="text">5</label>
+        <h3>Enter a rating on the toilet's ease of access:</h3>
+      <div class="rate">
+          <input type="radio" id="access5" name="rateaccess" value="5"/>
+          <label for="access5" title="text">5</label>
 
-            <input type="radio" id="availability4" name="rateavailability" value="4"/>
-            <label for="availability4" title="text">4</label>
+          <input type="radio" id="access4" name="rateaccess" value="4"/>
+          <label for="access4" title="text">4</label>
 
-            <input type="radio" id="availability3" name="rateavailability" value="3"/>
-            <label for="availability3" title="text">3</label>
+          <input type="radio" id="access3" name="rateaccess" value="3"/>
+          <label for="access3" title="text">3</label>
 
-            <input type="radio" id="availability2" name="rateavailability" value="2"/>
-            <label for="availability2" title="text">2</label>
+          <input type="radio" id="access2" name="rateaccess" value="2"/>
+          <label for="access2" title="text">2</label>
 
-            <input type="radio" id="availability1" name="rateavailability" value="1"/>
-            <label for="availability1" title="text">1</label>
+          <input type="radio" id="access1" name="rateaccess" value="1"/>
+          <label for="access1" title="text">1</label>
 
-            <input type="radio" id="availability0" name="rateavailability" value="0"/>
-            <label for="availability1" title="text">0</label>
-          </div>
+          <input type="radio" id="access0" name="rateaccess" value="0"/>
+          <label for="access1" title="text">0</label>
+        </div>
 
-          <h3>Enter a rating on the toilet's ease of access:</h3>
-        <div class="rate">
-            <input type="radio" id="access5" name="rateaccess" value="5"/>
-            <label for="access5" title="text">5</label>
+        <button onclick="document.location='home.html'">Submit Rating</button>
 
-            <input type="radio" id="access4" name="rateaccess" value="4"/>
-            <label for="access4" title="text">4</label>
-
-            <input type="radio" id="access3" name="rateaccess" value="3"/>
-            <label for="access3" title="text">3</label>
-
-            <input type="radio" id="access2" name="rateaccess" value="2"/>
-            <label for="access2" title="text">2</label>
-
-            <input type="radio" id="access1" name="rateaccess" value="1"/>
-            <label for="access1" title="text">1</label>
-
-            <input type="radio" id="access0" name="rateaccess" value="0"/>
-            <label for="access1" title="text">0</label>
-          </div>
-
-          <button onclick="document.location='home.html'">Submit Rating</button>
-
-    </body>
+  </body>
 </html>
