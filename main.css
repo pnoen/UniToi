@@ -1,0 +1,30 @@
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+body {
+    background-color: rgb(200, 219, 200);;
+}
+
+#navigation_bar {
+    background-color: rgb(38, 129, 38);
+    overflow: hidden;
+    margin: auto;
+    width: 72.2%;
+    margin-top: 40px;
+}
+  
+#navigation_bar a {
+    float: left;
+    color: gainsboro;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navigation_bar a:hover {
+    background-color: gainsboro;
+    color: black;
+}
