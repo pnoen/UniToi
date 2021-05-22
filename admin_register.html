@@ -6,6 +6,7 @@
         <title>UniToi</title>
         <link rel="stylesheet" href="static/css/main.css">
         <link rel="stylesheet" href="static/css/admin_register.css">
+        <script src="static/js/admin_register.js"></script>
     </head>
 
     <body>
@@ -26,7 +27,7 @@
             <h1>Admin Register</h1> <!-- Ensure admin can't create account if account with given credentials already exists -->
             <br>
             <p>Register an account using staff email</p>
-            <form action="admin_dashboard.html" method="post">
+            <form action="admin_login.html" onsubmit="return createUser(email, password, confirm_password)">
                 <div class="input_box">
                     <label for="email">Email: </label>
                     <input type="text" id="email" name="email">
@@ -34,7 +35,11 @@
 
                 <div class="input_box">
                     <label for="password">Password: </label>
-                    <input type="text" id="password" name="password">
+                    <input type="password" id="password" name="password">
+                </div>
+                <div class="input_box">
+                    <label for="password">Confirm Password: </label>
+                    <input type="password" id="confirm_password" name="confirm_password">
                 </div>
                 <br>
                 <input type="submit" value="Create account">
