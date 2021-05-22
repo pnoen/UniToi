@@ -19,25 +19,3 @@ hr {
     color:gray;
     background-color:gray;
 }
-
-#navigation_bar {
-  background-color: darkgreen;
-  overflow: hidden;
-  margin: auto;
-  width: 77.885%;
-  margin-top: 40px;
-}
-
-#navigation_bar a {
-  float: left;
-  color: gainsboro;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navigation_bar a:hover {
-  background-color: gainsboro;
-  color: black;
-}
