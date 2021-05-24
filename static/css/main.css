@@ -5,6 +5,8 @@ h1 {
 
 body {
     background-color: rgb(200, 219, 200);
+    margin: auto;
+    width: 1200px;
 }
 
 #navigation_bar {
