@@ -1,1 +1,9 @@
-
+article {
+    border: 2px;
+    border-style: hidden;
+    float: left;
+    width: 22.3%;
+    padding: 10px;
+    margin: 60px 8px 40px 0px;
+    text-align: center; 
+}
