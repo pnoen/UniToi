@@ -1,8 +1,3 @@
-function submitted(message) {
-    alert(message)
-    document.location = "home.html"
-}
-
 function addRating() {
     var toilet = document.getElementById("toilet_dropdown_select")
     var toiletVal = toilet.options[toilet.selectedIndex].text;
