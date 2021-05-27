@@ -1,21 +1,66 @@
-form {
-    position: absolute;
-    display: inline-block;
-    right: 10px;
+.section {
+    width: 50%;
+    float: left;
 }
 
-.notification_box {
+.reviews_box {
     background-color: rgb(194, 194, 194);
     border: 1px solid rgb(100, 100, 100);
-    width: 1130px;
+    width: 500px;
     height: 400px;
     overflow-x: auto;
+    text-align: left;
+}
+
+.reviews_box hr {
+    width: 100%;
+}
+
+.reviews_box p {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+.ratings_box {
+    background-color: rgb(194, 194, 194);
+    border: 1px solid rgb(100, 100, 100);
+    width: 500px;
+    height: 400px;
+    overflow-x: auto;
+    text-align: left;
+}
+
+.ratings_box hr {
+    width: 100%;
+}
+
+.ratings_box p {
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 hr {
-    width: 80%;
+    width: 85%;
     height:2px;
     border-width:0;
-    color:gray;
     background-color:gray;
+}
+
+.bottom_section {
+    display: flex;
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+}
+
+.toilet {
+    margin: 0;
+    font-size: 18px;
+}
+
+.availibility {
+    padding-left: 10px;
+}
+
+.accessibility {
+    padding-left: 10px;
 }
