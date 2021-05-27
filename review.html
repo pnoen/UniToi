@@ -32,7 +32,7 @@
 
         <h3>Select which toilet you wish to rate</h3>
         <form id="toilet_dropdown">
-            <select>
+            <select id="toilet_dropdown_select">
                 <option>Toilet 1</option>
                 <option>Toilet 2</option>
                 <option>Toilet 3</option>
@@ -46,10 +46,10 @@
         </form>
 
         <form action="home.html">
-            <input type="Enter" value="" maxlength="100"/>
+            <input type="Enter" id="review_feedback" value="" maxlength="100"/>
         </form>
 
-        <button onclick="submitted('Review has been submitted')">Submit Review</button>
+        <button onclick="submitted('Review has been submitted');addReview()">Submit Review</button>
 
     </body>
 

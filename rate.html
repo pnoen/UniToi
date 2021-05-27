@@ -31,7 +31,7 @@
 
       <h3>Select which toilet you wish to rate</h3>
       <form id="toilet_dropdown">
-        <select>
+        <select id="toilet_dropdown_select">
           <option>Toilet 1</option>
           <option>Toilet 2</option>
           <option>Toilet 3</option>
@@ -107,7 +107,7 @@
           <label for="access1" title="text">0</label>
         </div>
 
-        <button onclick="submitted('Rating has been submitted')">Submit Rating</button>
+        <button onclick="submitted('Rating has been submitted');addRating()">Submit Rating</button>
 
   </body>
 </html>
