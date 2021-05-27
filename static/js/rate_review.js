@@ -14,6 +14,10 @@ function addRating() {
             cleanlinessVal = cleanliness[i].value;
         }
     }
+    if (cleanlinessVal == "-") {
+        alert("Select a rating for cleanliness")
+        return false;
+    }
 
     var availabilityVal = "-";
     var availability = document.getElementsByName("rateavailability");
@@ -23,12 +27,22 @@ function addRating() {
         }
     }
 
+    if (availabilityVal == "-") {
+        alert("Select a rating for availability")
+        return false;
+    }
+
     var accessVal = "-";
     var access = document.getElementsByName("rateaccess");
     for (i = 0; i < access.length; i++) {
         if (access[i].checked == true) {
             accessVal = access[i].value;
         }
+    }
+
+    if (accessVal == "-") {
+        alert("Select a rating for ease of access")
+        return false;
     }
 
     var rating = {
@@ -47,6 +61,10 @@ function addRating() {
 
     ratings.push(rating);
     sessionStorage.setItem("ratings", JSON.stringify(ratings));
+
+    alert("Rating has been submitted")
+    document.location = "home.html"
+    return true;
 }
 
 function addReview() {
@@ -54,7 +72,11 @@ function addReview() {
     var toiletVal = toilet.options[toilet.selectedIndex].text;
 
     var feedback = document.getElementById("review_feedback");
-    var feedbackVal = feedback.value;
+    var feedbackVal = feedback.value.trim();
+    if (feedbackVal.length == 0) {
+        alert("Review is empty");
+        return false;
+    }
 
     var review = {
         toilet: toiletVal,
@@ -70,4 +92,8 @@ function addReview() {
 
     reviews.push(review);
     sessionStorage.setItem("reviews", JSON.stringify(reviews));
+
+    alert("Review has been submitted")
+    document.location = "home.html"
+    return true;
 }
