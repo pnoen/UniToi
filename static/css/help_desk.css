@@ -1,1 +1,14 @@
+ul {
+    list-style: none;
+}
 
+.question {
+    margin: 0;
+    font-size: 18px;
+}
+
+.bottom_section {
+    display: flex;
+    color: rgb(97, 97, 97);
+    font-size: 14px;
+}
