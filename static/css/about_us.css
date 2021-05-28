@@ -7,3 +7,7 @@ article {
     margin: 0px 8px 40px 0px;
     text-align: center; 
 }
+
+article img {
+    width: 150px;
+}
